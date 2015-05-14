@@ -10,9 +10,9 @@ BDIR = bin
 LIBS=-lm
 
 ifeq ($(OS),Windows_NT)
-   RM = del /Q $(ODIR)
+	RM = del /Q $(ODIR)
 else
-   RM = rm -f $(ODIR)/*.o *~ core $(IDIR)/*~ 
+	RM = rm -f $(ODIR)/*.o *~ core $(IDIR)/*~ 
 endif
 
 _DEPS = main.h cssgenerator.h htmlgenerator.h css_util.h
