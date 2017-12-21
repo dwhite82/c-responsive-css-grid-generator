@@ -57,8 +57,8 @@ void output_outro(){
 void output_css(Stylesheet *sty){
     FILE *cssHeader_fp, *css_fp;
 
-    cssHeader_fp = fopen("res/shead", "r");
-    css_fp = fopen ("created_grid/style.css", "w+");
+    cssHeader_fp = fopen("../res/shead", "r");
+    css_fp = fopen ("../created_grid/style.css", "w+");
 
     combine_file(css_fp, cssHeader_fp);
     fclose(cssHeader_fp);
@@ -73,10 +73,10 @@ void output_css(Stylesheet *sty){
 void output_html_tpl(Stylesheet *sty){
     FILE *idx_fp, *htmlHeader_fp, *htmlFooter_fp;
 
-    htmlHeader_fp = fopen("res/header", "r");
-    htmlFooter_fp = fopen("res/footer", "r");
+    htmlHeader_fp = fopen("../res/header", "r");
+    htmlFooter_fp = fopen("../res/footer", "r");
 
-    idx_fp = fopen ("created_grid/index.html", "w+");
+    idx_fp = fopen ("../created_grid/index.html", "w+");
 
     combine_file(idx_fp, htmlHeader_fp);
     fclose(htmlHeader_fp);

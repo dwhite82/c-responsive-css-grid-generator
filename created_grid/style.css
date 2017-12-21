@@ -1,0 +1,176 @@
+/* Site-wide general styles */
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, table, section, summary {
+    display: block;
+}
+[hidden] {
+    display: none;
+}
+* {margin: 0;
+    padding: 0;
+    border: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+html { 
+    height:100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: inherit;    /* Firefox, other Gecko */
+    box-sizing: inherit;
+}
+
+body {text-align:left;
+    width:100%;
+    height:100%;
+    font-size:100%;
+    line-height:1.5em;
+}
+
+img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* Initial grid definitions */
+
+.grid-container {
+    width:auto;
+}
+
+.gridrow {
+	margin: 0 auto;
+	padding: 0 1.042%; /* 10px/960px */
+	clear:both;
+}
+
+.gridrow [class^="col"] {
+	margin-bottom: 1.25em; /* 20px/16px */
+}
+
+.gridrow :last-child[class^="col"] {
+	margin: 0 0 1.25em 0; /* 20px/16px */
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11 { 
+	float: none;
+	width: 100%;
+	margin: 0 2.128% 0 0; /* 20px/940px */
+}
+.col12 { width: 100%; margin:0;}
+
+/* 48em = 768px/16px;	74.938em = 1199px/16px */
+@media all and (min-width:48em) and (max-width:74.938em){
+
+	.grid-container {
+		padding:0;
+	}
+	.gridrow {
+		max-width: 60em; /* 960px/16px */
+		padding:0 1.042%; /* 10px/960px */
+	}
+	.gridrow [class^="col"] {
+		margin-bottom: 1.25em; /* 20px/16px */
+	}
+
+	.gridrow :last-child[class^="col"] {
+		margin: 0 0 1.25em 0; /* 20px/16px */
+	}
+	.col1,
+	.col2,
+	.col3,
+	.col4,
+	.col5,
+	.col6,
+	.col7,
+	.col8,
+	.col9,
+	.col10,
+	.col11{
+		float: left;
+		margin: 0 2.128% 0 0; /* 20px/940px */
+	}
+
+	.col1 { width: 6.383%; } /* 60px/940px */
+	.col2 { width: 14.894%; } /* 140px/940px */
+	.col3 { width: 23.404%; } /* 220px/940px */
+	.col4 { width: 31.915%; } /* 300px/940px */
+	.col5 { width: 40.426%; } /* 380px/940px */
+	.col6 { width: 48.936%; } /* 460px/940px */
+	.col7 { width: 57.447%; } /* 540px/940px */
+	.col8 { width: 65.957%; } /* 620px/940px */
+	.col9 { width: 74.468%; } /* 700px/940px */
+	.col10 { width: 82.979%; } /* 780px/940px */
+	.col11 { width: 91.489%; } /* 860px/940px */
+	.col12 { width: 100%; margin:0;}
+}
+
+/* 75em = 1200px/16px */
+@media all and (min-width:75em){
+
+	.grid-container {
+		padding:0;
+	}
+	.gridrow {
+		max-width: 75em; /* 1200px/16px */
+		padding:0 1.25%; /* 15px/1200px */
+	}
+	.gridrow [class^="col"] {
+		margin-bottom: 1.875em; /* 30px/16px */
+	}
+
+	.gridrow :last-child[class^="col"] {
+		margin: 0 0 1.875em 0; /* 30px/16px */
+	}
+	.col1,
+	.col2,
+	.col3,
+	.col4,
+	.col5,
+	.col6,
+	.col7,
+	.col8,
+	.col9,
+	.col10,
+	.col11{
+		float: left;
+		margin: 0 2.564% 0 0; /* 30px/1170px */
+	}
+
+	.col1 { width: 5.983%; } /* 70px/1170px */
+	.col2 { width: 14.53%; } /* 170px/1170px */
+	.col3 { width: 23.077%; } /* 270px/1170px */
+	.col4 { width: 31.624%; } /* 370px/1170px */
+	.col5 { width: 40.171%; } /* 470px/1170px */
+	.col6 { width: 48.718%; } /* 570px/1170px */
+	.col7 { width: 57.265%; } /* 670px/1170px */
+	.col8 { width: 65.812%; } /* 770px/1170px */
+	.col9 { width: 74.359%; } /* 870px/1170px */
+	.col10 { width: 82.906%; } /* 970px/1170px */
+	.col11 { width: 91.453%; } /* 1070px/1170px */
+	.col12 { width: 100%; margin:0;}
+}
+

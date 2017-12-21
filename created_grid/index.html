@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <title>Responsive grid</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="author" content="Dan White"/>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+        /* Merge with main stylesheet under initial grid definitions for a sticky footer */
+        .grid-container {
+            margin-bottom:-5em;/* negative bottom margin MUST match footer height and #footerpush height for sticky footer*/
+            min-height: 100%;
+            overflow:hidden;
+        }
+
+        footer,
+        #footerpush {
+            overflow:hidden;
+            height:5em; /* MUST match negative margin in .grid-container */
+            clear:both;
+        }
+
+        /* Temporary styles for html template */
+        [class^="col"] { 
+            background-color: #f00;
+            color:#fff;
+            text-align:center;
+            padding:1.25em 1%;
+        }
+        footer,
+        header{
+            background:#000;
+            color:#fff;
+            width:100%;
+        }
+        header {
+            height:5em;
+            margin-bottom: 1.25em;
+        }
+        a {
+            color:#fff;
+        }
+
+    </style>
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="grid-container">
+        <!--Start Page Container -->
+        <!--Start Header -->
+        <header>
+            <div class="gridrow">
+                <a href="#">
+                        <h1>Responsive Grid</h1>
+                </a>
+            </div>
+        </header>
+		<div class="gridrow">
+		</div>
+
+		<div class="gridrow">
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+			<div class="col1">col1</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col6">col6</div>
+			<div class="col6">col6</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col2">col2</div>
+			<div class="col2">col2</div>
+			<div class="col2">col2</div>
+			<div class="col2">col2</div>
+			<div class="col2">col2</div>
+			<div class="col2">col2</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col1">col1</div>
+			<div class="col11">col11</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col2">col2</div>
+			<div class="col10">col10</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col3">col3</div>
+			<div class="col9">col9</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col4">col4</div>
+			<div class="col8">col8</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col5">col5</div>
+			<div class="col7">col7</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col6">col6</div>
+			<div class="col6">col6</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col7">col7</div>
+			<div class="col5">col5</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col8">col8</div>
+			<div class="col4">col4</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col9">col9</div>
+			<div class="col3">col3</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col10">col10</div>
+			<div class="col2">col2</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col11">col11</div>
+			<div class="col1">col1</div>
+		</div>
+
+		<div class="gridrow">
+			<div class="col12">col12</div>
+		</div>
+        <div id="footerpush"></div>
+    </div><!-- End Class Grid Container -->
+	
+    <footer>
+        <div class="gridrow">
+            <p id="copyright">&copy;2015&nbsp;teddyray.net</p>
+        </div>
+    </footer>
+</body>
+</html>

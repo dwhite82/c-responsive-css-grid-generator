@@ -1,0 +1,10 @@
+        <div id="footerpush"></div>
+    </div><!-- End Class Grid Container -->
+	
+    <footer>
+        <div class="gridrow">
+            <p id="copyright">&copy;2015&nbsp;teddyray.net</p>
+        </div>
+    </footer>
+</body>
+</html>
