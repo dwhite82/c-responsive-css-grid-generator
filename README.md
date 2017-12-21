@@ -39,7 +39,7 @@ make clean
 
 This grid generator is highly influenced by InDesign and accepts the same type of inputs for creating a Document. In the `bin/created_grid` directory I have included a generated a standard 960/1200px 12 column grid css and html file using the values:
 ``` 
-Number of oolumns
+Number of columns
 >12
 Number of desktop breakpoints (5 maximum)
 >2

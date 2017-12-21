@@ -21,7 +21,7 @@ Stylesheet input_stylesheet(){
 
     s.baseline = BASELINE;
 
-    printf("Number of oolumns\n>");
+    printf("Number of columns\n>");
     scanf("%d", &s.numcol);
     printf("Number of desktop breakpoints (5 maximum)\n>");
     scanf("%d", &s.breakpointCount);
