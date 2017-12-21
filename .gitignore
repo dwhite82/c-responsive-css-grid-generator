@@ -1,4 +1,3 @@
-bin/*
 obj/*
 created_grid/*
 !bin/.gitkeep
