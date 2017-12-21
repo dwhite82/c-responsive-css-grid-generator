@@ -1,2 +1,6 @@
-bin/* 
+bin/*
 obj/*
+created_grid/*
+!bin/.gitkeep
+!obj/.gitkeep
+!created_grid/.gitkeep
