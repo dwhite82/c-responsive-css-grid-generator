@@ -9,7 +9,7 @@ It will ask the user for a few simple document properties and dimensions much li
 This project was born out of wanting to make use of some of the things I have been learning with C lately to turn into a valuable web tool that eliminates a nice chunk of front-end build time sitting around with 3 calculators, laboriously cutting and pasting only to have maybe made a miscalculation by .001% somewhere and having to redo it.
 
 ### Version
-0.0.2
+0.0.3
 
 ### Pre-compiled Downloads
 

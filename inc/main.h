@@ -11,7 +11,7 @@
 */
 
 /*! @define VERSION   Current working version of Grid Generator */
-#define VERSION "0.0.2"
+#define VERSION "0.0.3"
 
 /*!
  * @function    output_intro
